@@ -28,18 +28,18 @@
             <legend>Contact Us</legend>
 
             <div>
-              <label for="name">Name</label>
+              <label for="name">Name*</label>
               <input type="text" id="name" name="name" required />
             </div>
 
             <div>
-              <label for="email">E-mail</label>
+              <label for="email">E-mail*</label>
               <input type="email" id="email" name="email" required />
             </div>
 
             <div>
-              <label for="subject">Subject</label>
-              <select name="subject" id="subject">
+              <label for="subject">Subject*</label>
+              <select name="subject" id="subject" required>
                 <option value="-">Choose a subject</option>
                 <option value="technique-problem">Technique problem</option>
                 <option value="Order">Order</option>
@@ -53,16 +53,25 @@
             </div>
 
             <div>
-              <button id="send" type="submit">Send</button>
+              <button type="submit">Send</button>
+            </div>
+
+            <div>
+            
+                <input type="checkbox" id="agree-privacy-policy" name="agree-privacy-policy" value="yes" required />
+                <label for="agree-privacy-policy">Agree to our Personal Data Policy*</label>
+                <p><em>We only use the personal data to reply to message. <br>
+                <a href="privacy.html">Read more about our Personal Data Policy</a> </em></p>
+            
             </div>
           </fieldset>
         </form>
-       
 
+      
       </section>
     </main>
     
 
-     <footer>&copy; 2026 Created by L.W. </footer>
+     <footer>&copy; 2026 created by L.W. </footer>
   </body>
 </html>
