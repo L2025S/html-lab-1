@@ -71,8 +71,27 @@ footer {
 /* ========= Component Setting ========== */ 
 
 
+#privacy-article{
+  padding:2rem;
+
+}
+
+#what-to-collect-p{
+  display:block;
+  margin-bottom:2rem;
+}
 
 
 
+#use-data-p{
+  display:block;
+  margin-bottom:2rem;
+}
+
+
+#contact-us-p{
+  display:block;
+
+}
 
 
