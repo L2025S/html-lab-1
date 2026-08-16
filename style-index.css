@@ -70,6 +70,38 @@ footer {
 
 /* ========= Component Setting ========== */ 
 
+main h2 {
+  padding:2rem;
+  
+}
+
+#welcome-section{
+  display:block;
+  padding:2rem;
+  min-height:10vh;
+  font-size:1rem;
+}
+
+#welcome-section h2{
+  margin:0;
+  padding:0;
+}
+
+#brief-intro-section{
+  padding:2rem;
+  min-height:20vh;
+}
+
+#brief-intro-section h2{
+  margin:0;
+  padding:0;
+}
+
+#link-to-product-section{
+  padding:2rem;
+  font-size:1rem;
+}
+
 
 
 
