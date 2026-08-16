@@ -70,6 +70,24 @@ footer {
 
 /* ========= Component Setting ========== */ 
 
+.product-article{
+  display:flex;
+  align-items:flex-start;
+  gap: 1rem;
+}
+
+.product-img{
+  width:30%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  padding:1rem;
+}
+
+.product-info{
+  flex:1;
+}
+
+
 
 
 
