@@ -1,0 +1,78 @@
+
+/* ========= Global Setting ===============  */ 
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 16px; /* root em base / rem-basvärde */
+  font-family:
+    system-ui,
+    Times New Roman,
+    Times,
+    Serif;
+ /* background-color: #ffdab9; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fbc4ab;
+  min-height:98vh;/* 95% of the browser window height. */
+  display:flex;
+  flex-direction: column;/*the flex items are arranged from top to bottom instead of left to right. */
+}
+
+
+
+/* ========= Layout Setting ========== */ 
+
+header {
+  background-color: #f8ad9d;
+  padding: 20px;
+  margin: 0;
+  z-index: 1000;
+  position: sticky;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-weight: bold;
+  padding: 0; /* remove the default padding*/
+  margin: 0; /* remove the default margin*/
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+  display: inline-block;
+  background-color: #f4978e;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+main{
+  flex: 1; /*take up all remaining space in a flex container.*/
+}
+
+
+footer {
+  display: flex;
+  justify-content:center;
+}
+
+
+/* ========= Component Setting ========== */ 
+
+
+
+
+
+
+
