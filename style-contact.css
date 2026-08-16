@@ -70,7 +70,30 @@ footer {
 
 /* ========= Component Setting ========== */ 
 
+#name{
+  display:inline;
+  margin-bottom:1rem;
+}
 
+#email{
+  margin-bottom:1rem;
+}
+
+#subject{
+ 
+  font-size: 1rem;
+}
+
+#message{
+  display:block;
+  margin-bottom:1rem;
+}
+
+.btn-formula{
+  padding:0.5rem;
+  font-size:1rem;
+  background-color:#f4978e;
+}
 
 
 
