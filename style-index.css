@@ -102,6 +102,16 @@ main h2 {
   font-size:1rem;
 }
 
+/* ==== Enhance the link in the component part ==== */
+
+#link-to-product-section a:hover,
+#link-to-product-section a:hover
+ {
+  font-weight:bold;
+}
+
+
+
 
 
 
