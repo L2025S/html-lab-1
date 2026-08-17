@@ -96,6 +96,12 @@ footer {
 }
 
 
+/* ==== Enhance the Accessibility ====*/
+
+#contact-section-a:hover,
+#contact-section-a:focus{
+  font-weight:bold;
+}
 
 
 
