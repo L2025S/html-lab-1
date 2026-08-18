@@ -1,28 +1,31 @@
 
-/* ========= Global Setting ===============  */ 
+
+/* ========= Global Setting ===============  */
 
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 16px; /* root em base / rem-basvärde */
+  
+}
+
+body {
+  margin: 0;/* Normalize margin  */
+  padding: 0;
+
   font-family:
     system-ui,
     Times New Roman,
     Times,
     Serif;
- /* background-color: #ffdab9; */
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  color:#000000; /* font color */
   background-color: #fbc4ab;
-  min-height:98vh;/* 95% of the browser window height. */
-  display:flex;
-  flex-direction: column;/*the flex items are arranged from top to bottom instead of left to right. */
+
+
+  min-height: 98vh; /* 98% of the browser window height. */
+  display: flex;
+  flex-direction: column; /*the flex items are arranged from top to bottom instead of left to right. */
 }
-
-
 
 /* ========= Layout Setting ========== */ 
 
