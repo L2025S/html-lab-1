@@ -61,10 +61,12 @@ header nav ul li a:focus {
   font-weight: bold;
 }
 
-main{
+main {
   flex: 1; /*take up all remaining space in a flex container.*/
-  max-width:2560px;
+  max-width: 2560px;
   margin: 0 auto;
+  width:100%; /* Without this, its width will not adapt to browser window size. */
+  background-color:#FFDAB9;
 }
 
 
