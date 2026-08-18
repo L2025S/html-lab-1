@@ -75,10 +75,13 @@ footer {
 
 /* ========= Component Setting ========== */ 
 
+
 .product-article{
   display:flex;
   align-items:flex-start;
   gap: 1rem;
+  background-color:#FFDAB9;
+  border: 1px solid #ccc;
 }
 
 .product-img{
