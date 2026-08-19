@@ -78,10 +78,16 @@ footer {
 
 .product-article{
   display:flex;
+  flex-direction:column; /* pictures above and description below. */
   align-items:flex-start;
   gap: 1rem;
   background-color:#FFDAB9;
   border: 1px solid #ccc;
+
+
+  width: 30opx;
+  max-width:100%;
+  box-sizing:border-box;
 }
 
 .product-img{
@@ -93,6 +99,16 @@ footer {
 
 .product-info{
   flex:1;
+}
+
+
+/* ==== Flex container for product cards === */
+.product-list{
+  display:flex; /* start flexbox */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap:2rem; /* space between cards */
+  justify-content:center; /* center layout */
+  padding: 1 rem 0;
 }
 
 
