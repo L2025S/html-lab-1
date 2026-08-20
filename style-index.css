@@ -4,11 +4,10 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 16px; /* root em base / rem-basvärde */
-  
 }
 
 body {
-  margin: 0;/* Normalize margin  */
+  margin: 0; /* Normalize margin  */
   padding: 0;
 
   font-family:
@@ -16,9 +15,8 @@ body {
     Times New Roman,
     Times,
     Serif;
-  color:#000000; /* font color */
+  color: #000000; /* font color */
   background-color: #fbc4ab;
-
 
   min-height: 98vh; /* 98% of the browser window height. */
   display: flex;
@@ -33,9 +31,8 @@ header {
   margin: 0;
   z-index: 1000;
 
-
   position: sticky;
-  top:0; /* Sticky trigger. defines the threshold at which the element becomes sticky. */
+  top: 0; /* Sticky trigger. defines the threshold at which the element becomes sticky. */
 }
 
 header h1 {
@@ -44,10 +41,9 @@ header h1 {
 
 header nav ul {
   display: flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
   list-style: none;
   gap: 1rem;
@@ -55,7 +51,6 @@ header nav ul {
   padding: 0; /* remove the default padding*/
   margin: 0; /* remove the default margin*/
 }
-
 
 header nav ul li a:hover,
 header nav ul li a:focus {
@@ -69,9 +64,8 @@ header nav ul li a:focus {
 
 main {
   flex: 1; /*take up all remaining space in a flex container.*/
-  max-width:2560px;
+  max-width: 2560px;
   margin: 0 auto;
-
 }
 
 footer {
@@ -117,4 +111,65 @@ main h2 {
 #link-to-product-section a:hover,
 #link-to-product-section a:hover {
   font-weight: bold;
+}
+
+/* ==== Recommended products ==== */
+
+.product-card img {
+  width: 100%;
+  height:250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+
+.featured-products {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.product-card{
+  width:33.3%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border:2px dashed #f4978e;
+}
+
+
+
+/* ====  badge  ==== */
+
+.badge {
+  position: absolute;
+
+  right: 2px;
+  top: 4px;
+  font-size: clamp(
+    0.6,
+    1.2rem,
+    2rem
+  ); /* mininum value, preferred value, maximum value) */
+
+  color: red;
+  font-weight: bold;
+  background-color: #f4978e;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+
+/* ==== Responsive to different screen sizes ==== */ 
+
+@media(max-width:900px){
+  .product-card{
+    width:50%;
+  }
+
+}
+
+@media(max-width: 600px){
+  .product-card{
+    width:100%
+  }
 }
