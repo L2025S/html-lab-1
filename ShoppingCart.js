@@ -48,6 +48,7 @@ class ShoppingCart {
         
         this.saveToStorage();
         this.updateCartBadge();
+        document.dispatchEvent(new Event('cartUpdated')); // ✅ ✅ for cart sidebar 
         return this.items;
     }
 
@@ -56,6 +57,7 @@ class ShoppingCart {
         this.items = this.items.filter(item => item.id !== productId);
         this.saveToStorage();
         this.updateCartBadge();
+        document.dispatchEvent(new Event('cartUpdated')); // ✅ ✅ for cart sidebar 
         return this.items;
     }
 
@@ -69,6 +71,7 @@ class ShoppingCart {
             item.quantity = Math.min(newQuantity, item.maxQuantity || 99);
             this.saveToStorage();
             this.updateCartBadge();
+            document.dispatchEvent(new Event('cartUpdated')); // ✅ ✅for cart sidebar 
         }
         return this.items;
     }
@@ -100,6 +103,7 @@ class ShoppingCart {
         this.items = [];
         this.saveToStorage();
         this.updateCartBadge();
+         document.dispatchEvent(new Event('cartUpdated')); // ✅ ✅for cart sidebar 
         return this.items;
     }
 
