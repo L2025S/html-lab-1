@@ -128,3 +128,9 @@ footer {
 }
 
 
+/* ======== inactive ======= */
+
+.inactive{
+  background-color: grey;
+  color:#ccc
+}
