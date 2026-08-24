@@ -57,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add to cart
         addToCartBtn.addEventListener("click", function (e) {
             e.stopPropagation();
+
+            const productImg =article.querySelector(".product-img");
+            const productImage =productImg ? productImg.src : '';
             
             // Create product object
             const product = {
