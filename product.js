@@ -24,7 +24,8 @@ function loadJsonProducts() {
           <div class="product-info">
 
             <h3>${product.name}</h3>
-            <span class="product-list badge">${product.badge}</span>
+    
+            ${product.badge ? `<span class="product-list badge">${product.badge}</span>` : ""}
             <p class="product-description">${product.description}</p>
             <p><strong>Price:</strong>${product.price} kr</p>
 
