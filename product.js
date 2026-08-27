@@ -24,7 +24,7 @@ function loadJsonProducts() {
           <div class="product-info">
 
             <h3>${product.name}</h3>
-            <span class="product-list badge>${product.badge}</span>
+            <span class="product-list badge">${product.badge}</span>
             <p class="product-description">${product.description}</p>
             <p><strong>Price:</strong>${product.price} kr</p>
 
@@ -180,12 +180,6 @@ function initializeProductArticles() {
     `;
   document.head.appendChild(style);
 }
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   loadJsonProducts();
