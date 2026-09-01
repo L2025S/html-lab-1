@@ -177,11 +177,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Clear the shopping cart
     // ==========================================
     document.getElementById('sidebarClearBtn').addEventListener('click', function() {
-        if (confirm('确定要清空购物车吗？')) {
+        if (confirm('Are you sure you want to empty the cart？')) {
             cart.clearCart();
             renderSidebarCart();
             updateSidebarBadge();
-            showNotification('购物车已清空');
+            showNotification('The cart has been emptied.');
         }
     });
 
@@ -190,13 +190,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     document.getElementById('sidebarCheckoutBtn').addEventListener('click', function() {
         if (cart.items.length === 0) {
-            showNotification('购物车是空的！', 'warning');
+            showNotification('The cart is empty！', 'warning');
             return;
         }
         
         const total = cart.getTotal();
         const items = cart.getTotalItems();
-        alert(`🎉 订单已提交！\n\n商品数量: ${items} 件\n总计: SEK ${total.toFixed(2)}\n\n感谢您的购买！`);
+        alert(`🎉 The order has been submitted！\n\nquantity: ${items} pieces\nTotal: SEK ${total.toFixed(2)}\n\nThank you for the purchase！`);
         closeCart();
     });
 
