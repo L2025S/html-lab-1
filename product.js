@@ -42,7 +42,7 @@ function loadJsonProducts() {
 
         container.appendChild(article);
       });
-      initializeProductArticles();
+      //initializeProductArticles();  Note: Delete this line to get rid of the doubled quantity in shopping cart. 
     });
 }
 
